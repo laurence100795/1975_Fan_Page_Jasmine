@@ -1,0 +1,834 @@
+/*----HTML Tags---*/
+
+a {
+    color: black; /*Remove default a tag styling*/
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*----Stylers---*/
+.col-4{ /*Remove Bootstrap Padding*/
+    padding:0;
+}
+
+.col-12{ /*Remove Bootstrap Padding*/
+    padding: 0;
+}
+
+.col-lg-4{ /* Remove class padding*/
+    padding: 0;
+}
+
+.col-lg-12{ /* Remove class padding*/
+    padding: 0;
+}
+
+.container-fluid { /*Remove Bootstrap Padding*/
+    padding:0;
+}
+
+.row { /*Remove Bootstrap Margin*/
+    margin: 0;
+}
+
+.NoPad { /*No padding class*/
+    padding: 0;
+}
+
+.NoMarg{ /*No margin class*/
+    margin: 0;
+}
+
+button, /*Remove button styling*/
+button:focus,
+button:active{
+	border:1px solid black;
+	background:none;
+	outline:none;
+	padding:0;
+}
+
+.fullWidthDivider { /*Divider to be used across different pages*/
+    width: 100%;
+    height: 2px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*----NavBar----*/
+
+.TopNav { /*Navbar logo box styling*/
+    background-color: #fafafa;
+    max-height: fit-content;
+}
+
+.NavLogo { /*Navbar Logo Styling*/
+    max-width: 620px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.navbar { /*Navbar box styling*/
+    background-color: #fafafa;
+    border-bottom: black;
+    border-bottom-width: 2px; 
+    border-bottom-style: solid;
+    padding: 4px 10px;
+}
+
+.navbar-brand { /*Remove margin making it off centre*/
+    margin: 0;
+}
+
+.navbar-light .navbar-toggler { /*remove toggler border*/
+    border: none;
+    padding: 10px;
+}
+
+.navbar-nav { /*Centring Nav options*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-light .navbar-nav .nav-link { /*Navbar words styling*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.nav-item { /*Navbar toggled words styling*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----Footer----*/
+
+html, /*set height of body*/
+body {
+    height: 100%;
+}
+
+body { /*convert body into a flex box column*/
+    display: flex;
+    flex-direction: column;
+}
+
+.Content { /*tells the flex box to automatically measure the width but not the height*/
+    flex: 1 0 auto;
+}
+
+footer { /*Pushes footer to the bottom of the page*/
+    flex-shrink: 0;
+}
+
+.FooterRow { /*Footer Box sytly and sizing*/
+    height: 85px;
+    width: 100%;
+    background-color: #fafafa;
+    border-top: black;
+    border-top-width: 2px; 
+    border-top-style: solid;
+}
+
+.FooterSection { /*Footer sections style and sizing*/
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+}
+
+.FooterSection3 { /*Social Links section styling*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.VerticalDivider { /*Vertical Divider class for splits in footer*/
+    width: 1px;
+    height: 48px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.DesignerStamp { /*Left footer styling*/
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+
+.DesignerCenter { /*Centres the designer tag horizontally and vertically*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+
+.DesignerLink { /*Designer Link Styling*/
+    color: grey;
+}
+
+.ReportLink { /*Report link styling*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+
+.ReportLinkStyle { /*Required for report link effect*/
+    transition: color 0.5s ease;
+}
+
+.SocialLink { /*Social footer links styling*/
+    margin-left: 20px;
+    padding: 1px 0;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+.fa-lg {    /*Footer icon Sizing*/
+    font-size: 1.5em;
+}
+
+.LinkCenter { /*Centres the footer links horizontally and vertically*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*----Footer media queries----*/
+
+@media(max-width:767px) { /*adjusts footer values at a width of 767px*/
+    .fa-lg{
+        font-size: 1em; 
+        }
+    .FooterRow {
+    height: 110px;
+    }
+    .SocialLink {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .VerticalDivider {
+        height: 75px;
+    }
+    .ReportLinkStyle {
+    color: #8b0000;
+    }
+    .fa-twitter {
+        color: #00acee;
+    }
+    .fa-instagram {
+        color: #E1306C;
+    }
+    .fa-youtube {
+         color:#c4302b;
+    }
+    .fa-spotify {
+        color: #1ed761;
+    }
+}
+
+@media(max-width:360px) { /*adjusts footer values at a width of 360px*/
+        .fa-lg{
+        font-size: 0.8em; 
+        }
+        .SocialLink {
+            margin-right: 0;
+            margin-left: 7px;
+        }
+        .DesignerStamp {
+            padding-top: 14px;
+        }
+        .FooterRow {
+            height: 115px;
+        }
+}
+/*----Footer hover styles----*/
+
+.DesignerLink:hover { /*designer link hover effect*/
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.ReportLinkStyle:hover { /*Report Footer hover style*/
+    font-weight: 900;
+    color: #8b0000;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+}
+
+.fa-twitter:hover { /*Twiiter hover effect*/
+    transition-timing-function: ease-in-out;
+    color: #00acee;
+}
+
+.fa-instagram:hover { /*instagram hover effect*/
+    transition-timing-function: ease-in-out;
+    color: #E1306C;
+}
+
+.fa-youtube:hover { /*Youtube hover effect*/
+    transition-timing-function: ease-in-out;
+    color: #c4302b;
+}
+
+.fa-spotify:hover { /*Spotify hover effect*/
+    transition-timing-function: ease-in-out;
+    color: #1ed761;
+}
+
+/*----SLide JS Stlying----*/
+
+.SlideImage { /*Background slide image styling*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000045;
+    object-fit: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/*----Home Body----*/
+
+.HomeCalloutContainer{ /*Home callout container styling*/
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.HomeLinks { /*Home links margin*/
+    margin-top: 70px;
+}
+
+.HomeTitle { /*Home title text styling*/
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    letter-spacing: 2px;
+    padding-top: 15px;
+
+}
+
+.HomeCallout { /*Home callout text styling*/
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size:20px;
+}
+
+.BottomHomeContainer1 { /*Home container left side styling*/
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.BottomHomeContainer2 { /*Home container right side styling*/
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.HomeImageContainer { /*Home container left side image styling*/
+    text-align: center;
+    display: block;
+}
+
+.HomeLinkImage { /*Home container right side text styling*/
+    max-width: 400px;
+    width: inherit;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.HomeLinkTitle { /*Home container right side title styling*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.HomeLinkText { /*Home container right side text styling*/
+    float: right;
+    width: 75%;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.HomeLinkArrow { /*Home container right side FA arrow styling*/
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+/*----Home Body media Queries----*/
+
+@media(max-width:767px) { /*adjusts home page values at a width of 767px*/
+    .BottomHomeContainer1{
+        margin-bottom:0;
+    }
+    .HomeLinkArrow {
+        display:none;
+    }
+    .HomeLinkText {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*----Report Body----*/
+
+.ReportTitle { /*Reporting Page title Styling*/
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.ReportPara { /*Reporting Page subtext Styling*/
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+.FormStyle { /*Reporting Page form Styling*/
+    padding-top: 40px;
+}
+
+.ButtonStyle,
+.ButtonStyle:focus,
+.ButtonStyle:active { /*Form button styling and positioning*/
+    margin-top: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #E0E0E0;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color 0.5s ease;
+}
+
+.ButtonStyle:hover,
+.ButtonStyle:focus,
+.ButtonStyle:active { /*Form button hover affect*/
+    transition-timing-function: ease-in-out;
+    color: #fafafa;
+    background-color: black;
+}
+
+/*----Merch Body----*/
+
+
+.AlbumCallout { /*Album Callout padding and text styling*/
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.AlbumCallout h2 { /*Album Callout h2 styling*/
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.AlbumCallout p { /*Album Callout p styling*/
+    font-weight: 400;
+}
+
+.AlbumTopper h2 { /*Album topper h2 styling*/
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+}
+
+.AlbumTitle h2{ /*Album title h2 styling*/
+    font-family: "Roboto",sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.AlbumContainer { /*Album container styling*/
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    color: white;
+}
+
+.AlbumCoverPhoto { /*Album cover photo styling and positioning*/
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.AlbumCoverPhoto { /*Album cover photo size styling*/
+    width: inherit;
+    max-width: 300px;
+}
+
+.AlbumPurchase { /*Album purchase link text centring*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+
+.AlbumPurchase div { /*Album purchase div property adjustment*/
+    display: block;
+}
+
+.AlbumPurchase div a { /*Album purchase a tag default style removal*/
+    text-decoration: none;
+}
+
+.AlbumPurchase div a h4 { /*Album purchase text trying and effect management*/
+    padding: 10px 0;
+    font-weight: 300;
+    color: white;
+    transition: 0.1s ease-in;
+}
+
+/*----Merch Media Queries----*/
+
+@media(max-width:767px) { /*adjusts merch page values at a width of 767px*/
+    .AlbumTopper {
+        display: none;
+    }
+}
+
+@media(max-width:540px) {
+    .AlbumTitle h2 {
+        padding-bottom: 15px;
+    }
+    .AlbumPurchase {
+        padding-top: 15px;
+    }
+}
+
+/*----Merch Effect----*/
+
+.AlbumPurchase div a h4:hover { /*Merch page purchase link hover effect*/
+    color: yellow;
+    font-weight: 400;
+}
+
+/*----Band Body----*/
+
+.BandContainer{ /*Band Container Styling*/
+    color: #fafafa;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.BandMemberContainer h2 { /*Band Container title Styling*/
+    text-align: center;
+    font-weight: 200;
+}
+
+.BandCalloutContainer { /*Band Callout interior Positioning*/
+    padding: 30px 0;
+    text-align: center;
+}
+
+.BandCalloutHead { /*Band Callout title text styling*/
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.BandCalloutPara { /*Band Callout p tag text styling*/
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+#map { /*Google map sizing*/
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MapContainer h2 { /*Google map text positioning and styling*/
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.BandMember { /*Band member text styling and positioning*/
+    text-align: center;
+    padding: 0 30px;
+}
+
+.BandMemberImage { /*Band member image styling, sizing and positioning*/
+    margin-top: 20px;
+    max-width: 400px;
+    width: inherit;
+}
+
+.BandMemberName { /*Band member name text styling*/
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.BandMemberText { /*Band member name text positioning*/
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.InfoAlbum { /*Album info text sizing and positioning*/
+    max-width: 300px;
+    width: inherit;
+    float: left;
+    padding: 20px;
+}
+
+.InfoAlbumContainer { /*Album info container content centering*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.BandInfoContainer div h1 { /*Band page information h1 styling and positioning*/
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.BandInfoContainer div h2 { /*Band page information h2 positioning*/
+    text-align: center;
+}
+
+.BandInfoContainer div p { /*Band page information p tag styling and positioning*/
+    text-align: center;
+    font-size: 18px;
+}
+
+.BandContainer div hr { /*Band page width divider colouring*/
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+/*----Band Page Animation----*/
+
+.fa-chevron-circle-up{ /*Band page top scroller colour*/
+    color:#fafafa96;
+}
+
+.TopScroller { /*Band page top scroller positioning*/
+	position:fixed;
+    bottom: 120px;
+    right: -100px;
+}
+
+.TaketoTop { /*Band page top scroller appear animation*/
+  animation-name: ScrollerAppear;
+  animation-duration: 1.5s; 
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes ScrollerAppear { /*Band page top scroller appear animation specifications*/
+  from {right: -100px;}
+  to {right: 50px;}
+}
+
+/*----Band Page Media Queries----*/
+
+
+@media(max-width:1024px) { /*adjusts band page values at a width of 1024px*/
+    .fa-4x {
+        font-size: 2.5em;
+    }
+@keyframes ScrollerAppear {
+  from {right: -100px;}
+  to {right: 20px;}
+}
+    .BandMemberContainer{
+        padding:0 40px;
+    }
+    .BandInfoContainer p{
+        padding:0 40px;
+        font-size: 22px!important;
+    }
+    .BandInfoContainer li{
+        font-size: 18px;
+    }
+    .BandMemberContainer p{
+        font-size: 18px!important;
+    }
+}
+
+@media(max-width:767px) { /*adjusts band page values at a width of 767px*/
+    .fa-4x {
+        font-size: 1.5em;
+    }
+    .BandMember {
+        padding: 0;
+    }
+    .BandInfoContainer li {
+        font-size: 14px;
+    }
+
+    .BandInfoContainer p {
+        font-size: 14px!important;
+    }
+
+    .BandMemberContainer p{
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:400px) {
+    #map {
+    width: 250px;
+    height: 250px;
+    }
+}
+
+/*---- Venue Page ----*/
+.VenueContent {
+    color: #fafafa;
+    font-family: "Roboto", sans-serif;
+}
+
+.VenueCallout {
+    text-align: center;
+    
+}
+
+.VenueCallout hr {
+    background-color: #fafafa;
+}
+
+.VenueCallout .col-8 {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.VenueCallout h1 {
+    padding: 20px 0 10px 0;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 48px;
+}
+
+
+.VenueCallout div div {
+    margin:0 20%;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.VenueContainer {
+    padding:0 5%;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.VenueContainer hr {
+    background-color: #fafafa;
+    border: 0;
+    height: 1px;
+}
+
+.VenueContainer h2 {
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.VenueContainer h3 {
+    font-weight: 300;
+}
+
+.VenueContainer h4 {
+    font-weight: 300;
+}
+
+.VenueContainer a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 24px;
+    border-color: #fafafa;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0 3px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    background-color: #00000052;
+}
+
+.VenueContainer a:hover,
+.VenueContainer a:active {
+    color: yellow;
+    border-color: yellow;
+    background-color: #00000052;
+}
+
+@media (max-width:540px){
+    .VenueCallout h1 {
+        font-size: 28px;
+}
+    .VenueCallout div div {
+        margin: 0;
+    }
+    .VenueCallout h3 {
+        font-size: 20px;
+    }
+    .VenueContainer h3 {
+        font-size: 20px;
+    }
+    .VenueContainer h4 {
+        font-size: 16px;
+    }
+    .VenueContainer a {
+        font-size: 20px;
+    }
+
+}
